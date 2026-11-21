@@ -2,39 +2,183 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
-  <title>KeyPrice media</title>
-  <style>
-    body { margin: 0; font-family: ui-sans-serif, system-ui, sans-serif; background: #F3F5F7; color: #121417; }
-    main { max-width: 960px; margin: 0 auto; padding: 32px 20px; }
-    h1 { font-size: 28px; letter-spacing: -0.03em; }
-    p { color: #5C6570; }
-    section { margin: 28px 0; }
-    video { width: 100%; height: auto; background: #121417; border-radius: 16px; }
-    a { color: #0B6B4C; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light only">
+  <meta name="theme-color" content="#121417">
+  <title>KeyPrice — New cars, better than showroom price</title>
+  <meta name="description" content="KeyPrice helps you buy a brand-new car at a better price than the showroom. Join a batch, we negotiate a group deal, you confirm the locked price at the showroom. Free for buyers. Mumbai and Ahmedabad first.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="clip1-poster.jpg">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>KeyPrice media</h1>
-    <p>Hosted clips for the KeyPrice site. This page is only for checking the files.</p>
-    <section>
-      <h2>clip1</h2>
-      <video controls playsinline muted poster="clip1-poster.jpg" src="clip1.mp4"></video>
+  <a class="skip" href="#join">Skip to join form</a>
+
+  <header class="nav" id="nav">
+    <div class="nav-pill">
+      <a class="logo" href="#top" aria-label="KeyPrice home">
+        <span class="mark" aria-hidden="true">K</span>
+        <span class="logo-text">
+          <span class="logo-name">KeyPrice</span>
+          <span class="logo-tag">New cars, better than showroom price</span>
+        </span>
+      </a>
+      <a class="btn btn-ink btn-sm" href="#join">Join a group</a>
+    </div>
+  </header>
+
+  <div id="top"></div>
+
+  <section class="scrolly" id="scrolly" aria-label="KeyPrice film">
+    <div class="scrolly-sticky">
+      <div class="stage" id="stage">
+        <div class="layers" id="layers"></div>
+        <div class="scrim" aria-hidden="true"></div>
+
+        <div class="copy" id="copy" aria-live="polite">
+          <p class="line line-a" id="lineA"></p>
+          <p class="line line-b" id="lineB"></p>
+        </div>
+
+        <div class="endcard" id="endcard" aria-hidden="true">
+          <div class="endcard-inner">
+            <div class="end-panel">
+              <div class="logo logo-lg">
+                <span class="mark mark-lg" aria-hidden="true">K</span>
+                <span class="logo-text">
+                  <span class="logo-name">KeyPrice</span>
+                  <span class="logo-tag">New cars, better than showroom price.</span>
+                </span>
+              </div>
+              <a class="btn btn-ink btn-lg" href="#join">Order now</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="hint" id="hint">Scroll</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="page">
+    <section class="block intro">
+      <div class="wrap">
+        <div class="eyebrow">Mumbai and Ahmedabad first</div>
+        <h1>Buying a new car? Get a better price than the showroom.</h1>
+        <p class="lead">Join a batch for the model you want. We negotiate a group deal with an authorised dealer. You confirm the locked price in person at the showroom, then book and pay the dealer directly. KeyPrice is free for buyers.</p>
+        <div class="actions">
+          <a class="btn btn-ink" href="#join">Join a group</a>
+          <a class="btn btn-ghost" href="#how">How it works</a>
+        </div>
+        <div class="chips" aria-label="Starting cities">
+          <span class="chip">Mumbai</span>
+          <span class="chip">Ahmedabad</span>
+          <span class="chip">Other cities next</span>
+        </div>
+      </div>
     </section>
-    <section>
-      <h2>clip2</h2>
-      <video controls playsinline muted poster="clip2-poster.jpg" src="clip2.mp4"></video>
+
+    <section class="block on-white" id="how">
+      <div class="wrap">
+        <div class="eyebrow">How it works</div>
+        <h2>Three steps to a better deal</h2>
+        <div class="steps">
+          <article class="card">
+            <div class="step-num">01</div>
+            <h3>Join a batch</h3>
+            <p>Tell us the car you want and join a batch for that model. We take new-car buyers in Mumbai and Ahmedabad first.</p>
+          </article>
+          <article class="card">
+            <div class="step-num">02</div>
+            <h3>We negotiate</h3>
+            <p>We negotiate a group deal with an authorised dealer for your batch. You keep the full discount. Nothing is paid to KeyPrice.</p>
+          </article>
+          <article class="card">
+            <div class="step-num">03</div>
+            <h3>Confirm at the showroom</h3>
+            <p>Confirm the locked price in person at the showroom, then book and pay the dealer directly.</p>
+          </article>
+        </div>
+      </div>
     </section>
-    <section>
-      <h2>clip3</h2>
-      <video controls playsinline muted poster="clip3-poster.jpg" src="clip3.mp4"></video>
+
+    <section class="block" id="faq">
+      <div class="wrap narrow">
+        <div class="eyebrow">FAQ</div>
+        <h2>Questions, answered</h2>
+        <div class="faq" id="faqList">
+          <details open>
+            <summary>What is KeyPrice?</summary>
+            <p>KeyPrice helps you buy a brand-new car at a better price than the showroom. Buyers join a batch for a model. We negotiate a group deal with an authorised dealer, and you confirm the locked price at the showroom.</p>
+          </details>
+          <details>
+            <summary>How much does KeyPrice cost me?</summary>
+            <p>Nothing. KeyPrice is free for buyers. You keep the full discount and pay the dealer directly. No booking money comes to us.</p>
+          </details>
+          <details>
+            <summary>Which cars can I buy?</summary>
+            <p>Brand-new cars only, of brands sold in India. The price you pay is agreed with the dealer for your car and variant — it is not listed on this page, because every model has different variants.</p>
+          </details>
+          <details>
+            <summary>Which cities?</summary>
+            <p>Mumbai and Ahmedabad first. Other cities across India will follow.</p>
+          </details>
+          <details>
+            <summary>How do I contact you?</summary>
+            <p>WhatsApp <a href="https://wa.me/919769700512">+91 97697 00512</a>. Use the form below and we will open a message with your details ready.</p>
+          </details>
+        </div>
+      </div>
     </section>
-    <section>
-      <h2>clip4</h2>
-      <video controls playsinline muted poster="clip4-poster.jpg" src="clip4.mp4"></video>
+
+    <section class="block on-white" id="join">
+      <div class="wrap narrow">
+        <div class="eyebrow">Join a group</div>
+        <h2>Tell us the car you want.</h2>
+        <p class="intro-p">Fill this in and tap the button. It opens WhatsApp with your details ready, so you can send them to us. Nothing is saved on this page.</p>
+        <form class="card form" id="joinForm" novalidate>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" required placeholder="Your name">
+          </label>
+          <label>
+            <span>City</span>
+            <select name="city" required>
+              <option value="Mumbai" selected>Mumbai</option>
+              <option value="Ahmedabad">Ahmedabad</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+          <label>
+            <span>Car model</span>
+            <input type="text" name="model" required placeholder="e.g. Hyundai Creta">
+          </label>
+          <button class="btn btn-ink btn-block" type="submit" id="joinBtn" disabled>Join a group</button>
+          <p class="form-note">Opens WhatsApp +91 97697 00512. KeyPrice is not a car dealer.</p>
+        </form>
+      </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <div class="logo">
+        <span class="mark" aria-hidden="true">K</span>
+        <span class="logo-text">
+          <span class="logo-name">KeyPrice</span>
+          <span class="logo-tag">New cars, better than showroom price</span>
+        </span>
+      </div>
+      <a class="btn btn-ink btn-sm" href="#join">Join a group</a>
+    </div>
+    <div class="wrap">
+      <p class="legal">WhatsApp +91 97697 00512 · KeyPrice is not a car dealer. You confirm the price and pay the authorised dealer directly.</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
 </body>
 </html>
