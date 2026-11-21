@@ -1,0 +1,30 @@
+{
+  "width": 1280,
+  "height": 720,
+  "clips": [
+    {
+      "id": 1,
+      "count": 71,
+      "path": "frames/clip1",
+      "ext": "webp"
+    },
+    {
+      "id": 2,
+      "count": 71,
+      "path": "frames/clip2",
+      "ext": "webp"
+    },
+    {
+      "id": 3,
+      "count": 71,
+      "path": "frames/clip3",
+      "ext": "webp"
+    },
+    {
+      "id": 4,
+      "count": 63,
+      "path": "frames/clip4",
+      "ext": "webp"
+    }
+  ]
+}

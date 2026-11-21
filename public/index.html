@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="clip1-poster.jpg">
+  <link rel="preload" as="image" href="frames/clip1/001.webp" type="image/webp">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -39,8 +40,14 @@
         <div class="scrim" aria-hidden="true"></div>
 
         <div class="copy" id="copy" aria-live="polite">
-          <p class="line line-a" id="lineA"></p>
-          <p class="line line-b" id="lineB"></p>
+          <div class="copy-stack" id="stack0">
+            <p class="line line-a">Buying a new car?</p>
+            <p class="line line-b">Beat the showroom price.</p>
+          </div>
+          <div class="copy-stack" id="stack1">
+            <p class="line line-a"></p>
+            <p class="line line-b"></p>
+          </div>
         </div>
 
         <div class="endcard" id="endcard" aria-hidden="true">
